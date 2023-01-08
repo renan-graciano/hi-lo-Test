@@ -8,12 +8,10 @@ internal class Program
     static int guesses;
     static int maxGuesses = 5;
     static bool playAgain = true;
-    static int numberOfPlayers = 0;
     static List<Player> players;
     static bool oneWin = false;
     private static void Main(string[] args)
     {
-
         Console.WriteLine("Welcome to the Hi-Lo Game!");
 
         while (playAgain)
@@ -36,10 +34,17 @@ internal class Program
 
         static void SetPlayers()
         {
+            int numberOfPlayers = 0;
             players = new();
             var randomNumber = new Random();
-            Console.WriteLine("Please set a number of players:(minimum 1)");
+            Console.WriteLine("Please set a number of players:(min 1)");
             int.TryParse(Console.ReadLine(), out numberOfPlayers);
+            if (numberOfPlayers == 0)
+            {
+                Console.WriteLine("Invalid number, will run in single player mode.");
+                numberOfPlayers++;
+            }
+
             for (int i = 1; i <= numberOfPlayers; i++)
             {
                 Player player = new()
@@ -91,7 +96,7 @@ internal class Program
                         }
                         else if (p.MisteryNumber < p.Guess)
                         {
-                            Console.WriteLine($"{p.PlayerName} The mistery number is  less than the guess {p.Guess}");
+                            Console.WriteLine($"{p.PlayerName} The mistery number is less than the guess {p.Guess}");
                             Line();
                         }
                         next = true;
