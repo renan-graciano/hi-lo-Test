@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/rgraciano/Projetos/hi-lo-Test/hi-lo-Test.csproj": {}
+  },
+  "projects": {
+    "/home/rgraciano/Projetos/hi-lo-Test/hi-lo-Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/rgraciano/Projetos/hi-lo-Test/hi-lo-Test.csproj",
+        "projectName": "hi-lo-Test",
+        "projectPath": "/home/rgraciano/Projetos/hi-lo-Test/hi-lo-Test.csproj",
+        "packagesPath": "/home/rgraciano/.nuget/packages/",
+        "outputPath": "/home/rgraciano/Projetos/hi-lo-Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/rgraciano/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
